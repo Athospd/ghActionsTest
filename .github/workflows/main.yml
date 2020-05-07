@@ -20,6 +20,7 @@ jobs:
           git clone --recursive https://github.com/Athospd/ghActionsTest
           cd ghActionsTest
           Rscript R/check_for_update.R
+          ls -h
       - uses: actions/upload-artifact@v2
         with:
           name: current_content
