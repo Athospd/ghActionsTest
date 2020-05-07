@@ -13,7 +13,7 @@ watched_content <- hour_content %>%
   xml_find_first('//*[@id="clock"]') %>%
   xml_text() %>%
   str_extract(":([0-9]{2}):")
-
+cat(getwd())
 current_content <- readRDS("current_content.rds")
 if(current_content != watched_content) {
   msg <- glue("The content has changed from {current_content} to  {watched_content}. Checked at {Sys.time()}")
