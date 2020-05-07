@@ -18,5 +18,8 @@ jobs:
           INCOMING_WEBHOOK_URL: ${{ secrets.INCOMING_WEBHOOK_URL }}
         run: |
           git clone --recursive https://github.com/Athospd/ghActionsTest
-          cd ghActionsTest/R
-          Rscript check_for_update.R
+          cd ghActionsTest
+          Rscript R/check_for_update.R
+          git add -A
+          git commit -m "updating current content"
+          git push
