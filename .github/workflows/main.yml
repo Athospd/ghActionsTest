@@ -11,7 +11,7 @@ jobs:
       - uses: r-lib/actions/setup-r@master
       - name: Install Package Dependencies
         run: |-
-          apt install libcurl4-openssl-dev
+          sudo apt install libcurl4-openssl-dev
           Rscript -e "install.packages(c('curl', 'magrittr', 'httr', 'stringr', 'xml2', 'glue'))"
       - name: Run script
         env:
