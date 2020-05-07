@@ -11,7 +11,7 @@ jobs:
       - uses: r-lib/actions/setup-r@master
       - name: Install Package Dependencies
         run: |-
-          Rscript -e "install.packages(c('magrittr', 'httr', 'stringr', 'xml2', 'glue'))"
+          Rscript -e "install.packages(c('curl', 'magrittr', 'httr', 'stringr', 'xml2', 'glue'))"
       - name: Run script
         env:
           INCOMING_WEBHOOK_URL: ${{ secrets.INCOMING_WEBHOOK_URL }}

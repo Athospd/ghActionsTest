@@ -1,8 +1,8 @@
 library(magrittr)
-library(httr)
 library(stringr)
 library(xml2)
 library(glue)
+library(httr)
 channel="#geral"
 incoming_webhook_url= Sys.getenv("INCOMING_WEBHOOK_URL")
 
