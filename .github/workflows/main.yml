@@ -20,6 +20,8 @@ jobs:
           git clone --recursive https://github.com/Athospd/ghActionsTest
           cd ghActionsTest
           Rscript R/check_for_update.R
+          git config --global user.email "athos.damiani@gmail.com"
+          git config --global user.name "Athos"
           git add -A
           git commit -m "updating current content"
           git push
