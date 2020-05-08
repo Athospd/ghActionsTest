@@ -2,7 +2,7 @@ name: Check for update in a Website and notify on slack
 on:
   push:
   schedule:
-  - cron: "* * * * *"
+  - cron: "0 1 * * *"
 jobs:
   check:
     runs-on: ubuntu-18.04
